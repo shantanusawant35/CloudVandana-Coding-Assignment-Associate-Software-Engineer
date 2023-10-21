@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <style>
+        .calculator {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        .number {
+            background-color: black;
+            color: white;
+        }
+
+        .opration {
+            background-color: darkgrey;
+            color: white;
+        }
+
+        .clear {
+            background-color: darkcyan;
+            color: white;
+        }
+
+        #display {
+            color: black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 150px;
+            height: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="buttons">
+            <table>
+                <tr>
+                    <td colspan="3">
+                        <div id="display"></div>
+                    </td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td class="clear">
+                        <p onclick="clearDisplay()">AC</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">
+                        <p onclick="appendToDisplay('9')">9</p>
+                    </td>
+                    <td class="number">
+                        <p onclick="appendToDisplay('8')">8</p>
+                    </td>
+                    <td class="number">
+                        <p onclick="appendToDisplay('7')">7</p>
+                    </td>
+                    <td class="opration">
+                        <p onclick="appendToDisplay('+')">+</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">
+                        <p onclick="appendToDisplay('4')">4</p>
+                    </td>
+                    <td class="number">
+                        <p onclick="appendToDisplay('5')">5</p>
+                    </td>
+                    <td class="number">
+                        <p onclick="appendToDisplay('6')">6</p>
+                    </td>
+                    <td class="opration">
+                        <p onclick="appendToDisplay('-')">-</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">
+                        <p onclick="appendToDisplay('1')">1</p>
+                    </td>
+                    <td class="number">
+                        <p onclick="appendToDisplay('2')">2</p>
+                    </td>
+                    <td class="number">
+                        <p onclick="appendToDisplay('3')">3</p>
+                    </td>
+                    <td class="opration">
+                        <p onclick="appendToDisplay('/')">/</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">
+                        <p onclick="appendToDisplay('.')">.</p>
+                    </td>
+                    <td class="number">
+                        <p onclick="appendToDisplay('0')">0</p>
+                    </td>
+                    <td class="number">
+                        <p onclick="calculateResult()">=</p>
+                    </td>
+                    <td class="opration">
+                        <p onclick="appendToDisplay('*')">*</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</body>
+</html>
